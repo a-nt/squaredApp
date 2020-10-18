@@ -9,9 +9,7 @@ public:
     
     Square();
     
-    int divider;
-    int step;
-
-    
+    float divider;
+    float step;
     
 };

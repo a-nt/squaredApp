@@ -41,6 +41,7 @@ class ofApp : public ofBaseApp{
     int pixelSize;
     
     ofImage reference;
+    int colorMode;
     
     int w;
     int h;

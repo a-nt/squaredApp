@@ -4,9 +4,17 @@
 void ofApp::setup(){
     
     
-    //reference.load("circle20.gif");
+    //
+    // REFERENCE IMAGES
+    //
+    
+    //reference.load("circle20.png");
     //reference.load("x20.png");
     reference.load("ang20.png");
+    //reference.load("trump40.png");
+    
+    colorMode = 2;
+    
     
     w = reference.getWidth();
     h = reference.getHeight();
@@ -20,7 +28,7 @@ void ofApp::setup(){
         }
     }
     
-    pixelSize = 128;
+    pixelSize = 2560 / w; //calculate size of pixels based on canvas size
 
 }
 
@@ -34,9 +42,18 @@ void ofApp::draw(){
     
     ofTranslate((ofGetWidth() - 2560) / 2, (ofGetHeight() - 2560) / 2);
     
-    ofBackground(200);
-    ofSetColor(0,0,255);
-    ofSetLineWidth(2);
+    if (colorMode == 1) {
+        ofBackground(100,0,0);
+        ofSetColor(0,0,0,100);
+        ofSetLineWidth(4);
+    }
+    if (colorMode == 2) {
+        ofBackground(200,200,200);
+        ofSetColor(0,0,100,255);
+        ofSetLineWidth(4);
+    }
+    
+
         
     
     for(int y = 0; y < h; y++) {

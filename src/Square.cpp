@@ -25,10 +25,8 @@ void Square::draw(float greyNormal, int size) {
     step = size / divider;
 
     
-    
-    
-    int xpos = 0;
-    int ypos = 0;
+    float xpos = 0.0;
+    float ypos = 0.0;
     
     
     for (int y = 0; y < divider; y++){
@@ -40,6 +38,5 @@ void Square::draw(float greyNormal, int size) {
         ofDrawLine(xpos, 0, xpos, size); // horiz
         xpos += step;
     }
-
 
 }
