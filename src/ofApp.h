@@ -6,7 +6,7 @@
 // BRUTAL PROJECTS
 // SQUARED 2020 / Anders Nærø Tangen
 //
-//
+// Developed in OF 0.11.0 on macOS 10.15.7
 //--------------------------------------------------------------
 
 #include "ofMain.h"

@@ -8,9 +8,9 @@ void ofApp::setup(){
     // REFERENCE IMAGES
     //
     
-    //reference.load("circle20.png");
+    reference.load("circle20.png");
     //reference.load("x20.png");
-    reference.load("ang20.png");
+    //reference.load("ang20.png");
     //reference.load("trump40.png");
     
     colorMode = 2;
