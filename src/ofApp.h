@@ -13,6 +13,7 @@
 #include "ofxGui.h"
 
 #include "Square.hpp"
+#include "Box.hpp"
 
 class ofApp : public ofBaseApp{
 
@@ -33,18 +34,24 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-    vector<vector<Square>> squares;
-    
-    Square oneSquare;
-    Square secondSquare;
     
     int pixelSize;
     
     ofImage reference;
     int colorMode;
+    int drawMode;
     
     int w;
     int h;
+    
+    
+    // SQUARE MODE
+    vector<vector<Square>> squares;
+    
+    // BOX MODE
+    vector<vector<Box>> boxes;
+    ofEasyCam cam;
+    ofLight light;
     
 		
 };
